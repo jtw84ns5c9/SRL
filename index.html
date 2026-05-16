@@ -1,50 +1,54 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Simple Parallax Header</title>
+    <title>SRL</title>
     <link rel="stylesheet" href="style.css">
+	<script src="simpleParallax.min.js"></script>
 </head>
 <body>
-    <header class="parallax-bg">
-        <div class="header-content">
-            <h1>Parallax Header</h1>
-            <p>A simple parallax scrolling effect</p>
-        </div>
-    </header>
-    <main class="main-content">
-        <h2>What is Parallax?</h2>
-        <p>Parallax scrolling is a web design technique in which the website background moves at a slower pace than the foreground. This results in a 3D effect as you scroll down the page, adding a sense of depth and creating a more immersive browsing experience.</p>
-        <p>This technique can be used to create a variety of effects, from subtle animations to full-screen interactive experiences. It is a popular choice for single-page websites, portfolios, and product landing pages.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </main>
 
-    <header class="parallax-bg">
-        <div class="header-content">
-            <h1>Parallax Header</h1>
-            <p>A simple parallax scrolling effect</p>
-        </div>
-    </header>
-    <main class="main-content">
-        <h2>2</h2>
-        <p>Parallax scrolling is a web design technique in which the website background moves at a slower pace than the foreground. This results in a 3D effect as you scroll down the page, adding a sense of depth and creating a more immersive browsing experience.</p>
-        <p>This technique can be used to create a variety of effects, from subtle animations to full-screen interactive experiences. It is a popular choice for single-page websites, portfolios, and product landing pages.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </main>
+<h1>Hello SRL</h1>
+<h2>Have Some Fun</h2>
+<div class="box">
+  <img class="thumbnail" src="Image1.heic" alt="image">
+</div>
 
-    <header class="parallax-bg">
-        <div class="header-content">
-            <h1>Parallax Header</h1>
-            <p>A simple parallax scrolling effect</p>
-        </div>
-    </header>
-    <main class="main-content">
-        <h2>3</h2>
-        <p>Parallax scrolling is a web design technique in which the website background moves at a slower pace than the foreground. This results in a 3D effect as you scroll down the page, adding a sense of depth and creating a more immersive browsing experience.</p>
-        <p>This technique can be used to create a variety of effects, from subtle animations to full-screen interactive experiences. It is a popular choice for single-page websites, portfolios, and product landing pages.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </main>
-    
+<h1>Right</h1>
+<h2>1</h2>
+<div class="box">
+  <img class="thumbnail1" src="Image1.heic" alt="image">
+</div>
+<script>
+var image1 = document.getElementsByClassName('thumbnail1');
+new simpleParallax(image1, {
+	orientation: 'right'
+});
+</script>
+
+<h1>Up</h1>
+<h2>2</h2>
+<div class="box">
+<img class="thumbnail2" src="Image1.heic" alt="image">
+</div>
+<script>
+var image2 = document.getElementsByClassName('thumbnail2');
+new simpleParallax(image2, {
+        orientation: 'up'
+});
+</script>
+
+<h1>Up Left</h1>
+<h2>3</h2>
+<div class="box">
+<img class="thumbnail3" src="Image1.heic" alt="image">
+</div>
+<script>
+var image3 = document.getElementsByClassName('thumbnail3');
+new simpleParallax(image3, {
+        orientation: 'up left'
+});
+</script>
 
 </body>
 </html>
