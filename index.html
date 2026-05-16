@@ -3,8 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title>SRL</title>
-	<!-- <link rel="stylesheet" href="style.css"> -->
-
 	<style>
 		* {
 			box-sizing: border-box;
@@ -13,70 +11,47 @@
 		}
 		html {
 			font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", sans-serif;
-			font-size: 62.5%; /* 10px; Default: 16px; 14px -> 1.4rem */
-			color: #333; /* rgb(51, 51, 51) */
+			color: #333;
 		}
-
-    body {
-        /* margin: 0; Required */
-        font-size: 1.4rem;
-    }
-    
-    h1 {
-        margin-top: 0;
-        font-size: 6rem;
-    }
-    h2 {
-        margin-top: 0;
-        font-size: 2rem;
-    }
-    h3 {
-        margin-top: 0;
-    }
-    
-    a {
-        color: #007AFF;
-        text-decoration: none;
-    }
-    a:hover {
-        color: #484848;
-    }
-    
-    table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-    th {
-        padding: 0.1rem 0.2rem;
-        font-weight: normal;
-        text-align: left;
-        background: #eee;
-    }
-    td {
-        padding: 0.6rem 0.2rem;
-        vertical-align: top;
-        border-bottom: 1px solid #eee;
-    }
-
-	h1, h2 {
-		margin: 100px;
-		text-align: center;
-	}
-
-/*
-h1 {
-  margin-top: 30vh;
-}
-*/
-
+		h1 {
+			margin: 100px 0 30px;
+	        	font-size: 4rem;
+			text-align: center;
+		}
+		p {
+			font-size: 1.5rem;
+			text-align: center;
+		}
+		
+		<!-- simpleParallax -->
 		.box {
 			width: 100%;
 			height: 100%;
 			overflow: hidden;
 		}
-		
-		.thumbnail, .thumbnail1, .thumbnail2, .thumbnail3 {
+		.thumbnail {
 			width: 100%;
+		}
+		
+		<!-- Gallery -->
+		.gallery {
+			width: auto;
+			display: flex;
+			justify-content: center;
+			gap: 5px;
+		}
+		.gallery img {
+			width: 33%;
+			height: auto;
+		}
+		@media (max-width: 768px) {
+			.gallery {
+				flex-direction: column;
+				gap: 5px;
+			}
+			.gallery img {
+				width: 100%;
+			}
 		}
 	</style>
 
@@ -85,60 +60,45 @@ h1 {
 
 <body>
 	<div class="box">
-		<img class="thumbnail1" src="Image1.heic" alt="image">
+		<img class="thumbnail" src="SRL0_0.png">
+	</div>
+	
+	<h1>Hi there!</h1>
+	<div style="width: 560px; margin: 0 auto;">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/vbC6dm7OtCI?si=p35stVSoxggB7s5t&rel=0"></iframe>
+	</div>
+	
+	<h1>...and here it is.</h1>
+	<div style="width: 360px; margin: 0 auto;">
+		<a href="https://apps.apple.com/app/id6758390275" target="_blank">
+			<img src="Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" width="360" height="120">
+		</a>
 	</div>
 
-<h1>Hello. Have Some Fun.</h1>
-<h2></h2>
+	<h1>Say something?</h1>
+	<div style="width: 640px; margin: 0 auto;">
+		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScd9-XhhNzon2jqzU-HMmNxvrLqLucMSW6RYEEip9vZ8cR-rQ/viewform?embedded=true" width="640" height="621" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+	</div>
+	
+	<h1>Never worry.</h1>
+	<p><span style="font-weight: bold;">Privacy Policy:</span> SRL does not collect, store, or access any of your personal data - ever.</p>
+	
+	<h1>Shot Your Fun.</h1>
+	<div class="gallery">
+		<img src="SRL0_1.jpeg">
+		<img src="SRL0_2.jpeg">
+		<img src="SRL0_3.jpeg">
+	</div>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vbC6dm7OtCI?si=p35stVSoxggB7s5t&rel=0"></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vbC6dm7OtCI?si=p35stVSoxggB7s5t&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
-<h1>Right</h1>
-<h2>1</h2>
-<div class="box">
-  <img src="Image1.heic" alt="image">
-</div>
-<script>
-var image1 = document.getElementsByClassName('thumbnail1');
-new simpleParallax(image1, {
-	orientation: 'right'
-});
-</script>
-
-<h1>Up</h1>
-<h2>2</h2>
-<div class="box">
-<img class="thumbnail2" src="Image1.heic" alt="image">
-</div>
-<script>
-var image2 = document.getElementsByClassName('thumbnail2');
-new simpleParallax(image2, {
-        orientation: 'up'
-});
-</script>
-
-<h1>Up Left</h1>
-<h2>3</h2>
-<div class="box">
-<img class="thumbnail3" src="Image1.heic" alt="image">
-</div>
-<script>
-var image3 = document.getElementsByClassName('thumbnail3');
-new simpleParallax(image3, {
-        orientation: 'up right'
-});
-</script>
-
-
-<h2 id="contact">Contact &amp; Feedback</h2>
-
-<h2 id="privacypolicy">Privacy Policy</h2>
-<p style="margin-bottom:10rem; text-align:justify">Kakeibo does not collect, uses, or has access to any of your personal data recorded in the app, PERIOD. Your personal data is securely stored in your iPhone and/or iPad locally as well as in your iCloud remotely. For any question please get in touch through the Contact above.</p>
-
-<div id="footer">© Shoji Konishi</div>
+	<p style="margin: 100px 0 100px;">© Shoji Konishi</p>
+	
+	<!-- simpleParallax -->
+	<script>
+		var image = document.getElementsByClassName('thumbnail');
+		new simpleParallax(image, {
+        		orientation: 'right'
+		});
+	</script>
 
 </body>
 </html>
