@@ -1,23 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>SRL</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<title>SRL</title>
+	<!-- <link rel="stylesheet" href="style.css"> -->
+
+	<style>
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		html {
+			font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", sans-serif;
+			font-size: 62.5%; /* 10px; Default: 16px; 14px -> 1.4rem */
+			color: #333; /* rgb(51, 51, 51) */
+		}
+
+    body {
+        /* margin: 0; Required */
+        font-size: 1.4rem;
+    }
+    
+    h1 {
+        margin-top: 0;
+        font-size: 6rem;
+    }
+    h2 {
+        margin-top: 0;
+        font-size: 2rem;
+    }
+    h3 {
+        margin-top: 0;
+    }
+    
+    a {
+        color: #007AFF;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #484848;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th {
+        padding: 0.1rem 0.2rem;
+        font-weight: normal;
+        text-align: left;
+        background: #eee;
+    }
+    td {
+        padding: 0.6rem 0.2rem;
+        vertical-align: top;
+        border-bottom: 1px solid #eee;
+    }
+
+	h1, h2 {
+		margin: 100px;
+		text-align: center;
+	}
+
+/*
+h1 {
+  margin-top: 30vh;
+}
+*/
+
+		.box {
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+		
+		.thumbnail, .thumbnail1, .thumbnail2, .thumbnail3 {
+			width: 100%;
+		}
+	</style>
+
 	<script src="simpleParallax.min.js"></script>
 </head>
-<body>
 
-<h1>Hello SRL</h1>
-<h2>Have Some Fun</h2>
-<div class="box">
-  <img class="thumbnail" src="Image1.heic" alt="image">
-</div>
+<body>
+	<div class="box">
+		<img class="thumbnail1" src="Image1.heic" alt="image">
+	</div>
+
+<h1>Hello. Have Some Fun.</h1>
+<h2></h2>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vbC6dm7OtCI?si=p35stVSoxggB7s5t&rel=0"></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vbC6dm7OtCI?si=p35stVSoxggB7s5t&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 <h1>Right</h1>
 <h2>1</h2>
 <div class="box">
-  <img class="thumbnail1" src="Image1.heic" alt="image">
+  <img src="Image1.heic" alt="image">
 </div>
 <script>
 var image1 = document.getElementsByClassName('thumbnail1');
@@ -46,9 +128,17 @@ new simpleParallax(image2, {
 <script>
 var image3 = document.getElementsByClassName('thumbnail3');
 new simpleParallax(image3, {
-        orientation: 'up left'
+        orientation: 'up right'
 });
 </script>
+
+
+<h2 id="contact">Contact &amp; Feedback</h2>
+
+<h2 id="privacypolicy">Privacy Policy</h2>
+<p style="margin-bottom:10rem; text-align:justify">Kakeibo does not collect, uses, or has access to any of your personal data recorded in the app, PERIOD. Your personal data is securely stored in your iPhone and/or iPad locally as well as in your iCloud remotely. For any question please get in touch through the Contact above.</p>
+
+<div id="footer">© Shoji Konishi</div>
 
 </body>
 </html>
