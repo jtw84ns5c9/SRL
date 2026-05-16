@@ -1,0 +1,56 @@
+/* --- ★★★ 簡単カスタマイズエリア ★★★ --- */
+:root {
+    /* --- ヘッダーのデザイン --- */
+    --header-height: 80vh;   /* ヘッダーの高さ（ビューポートの80%） */
+    --header-text-color: #ffffff; /* ヘッダーの文字色 */
+    
+    /* --- 背景画像 --- */
+    /* ↓ここに好きな背景画像のURLを指定してください↓ */
+    --bg-image: url('https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+}
+/* -------------------------------------- */
+
+/* 基本的なページデザイン */
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+/* パララックス効果を適用する要素のスタイル */
+.parallax-bg {
+    height: var(--header-height);
+
+    /* 背景画像の設定 */
+    background-image: var(--bg-image);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* ▼▼▼ これが魔法の一行です ▼▼▼ */
+    background-attachment: fixed;
+    /* ▲▲▲ ここまで ▲▲▲ */
+
+    /* ヘッダー内の文字を中央に配置するためのスタイル */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--header-text-color);
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+/* ヘッダー内のコンテンツのスタイル */
+.header-content h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+.header-content p {
+    font-size: 1.5rem;
+}
+
+/* ヘッダー以下のコンテンツのスタイル */
+.main-content {
+    padding: 50px;
+    background-color: #fff;
+    line-height: 1.8;
+}
