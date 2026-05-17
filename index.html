@@ -22,83 +22,51 @@
 			font-size: 1.5rem;
 			text-align: center;
 		}
-		
-		<!-- simpleParallax -->
-		.box {
+		img {
 			width: 100%;
-			height: 100%;
-			overflow: hidden;
-		}
-		.thumbnail {
-			width: 100%;
-		}
-		
-		<!-- Gallery -->
-		.gallery {
-			width: auto;
-			display: flex;
-			justify-content: center;
-			gap: 5px;
-		}
-		.gallery img {
-			width: 33%;
 			height: auto;
+			/*aspect-ratio: 16 / 9;*/
+			display: block;
+			margin: auto;
 		}
-		@media (max-width: 768px) {
-			.gallery {
-				flex-direction: column;
-				gap: 5px;
-			}
-			.gallery img {
-				width: 100%;
-			}
+		.youtube {
+			width: 100%;
+			height: auto;
+			aspect-ratio: 16 / 9;
+			display: block;
+			margin: auto;
 		}
 	</style>
-
-	<script src="js/simpleParallax.min.js"></script>
 </head>
 
 <body>
-	<div class="box">
-		<img class="thumbnail" src="images/SRL0_0.png">
-	</div>
+	<iframe class="youtube" src="https://www.youtube.com/embed/vbC6dm7OtCI?controls=0&fs=1&rel=0" frameborder="0" allowfullscreen></iframe>
 	
-	<h1>Hi there!</h1>
-	<div style="width: 720px; margin: 0 auto;">
-		<iframe width="720" height="405" src="https://www.youtube.com/embed/vbC6dm7OtCI?controls=0&fs=1&rel=0" frameborder="0" allowfullscreen></iframe>
-	</div>
-	
-	<h1>...and here it is.</h1>
+	<h1>Hi there! Here it is.</h1>
 	<div style="width: 360px; margin: 0 auto;">
 		<a href="https://apps.apple.com/app/id6758390275" target="_blank">
 			<img src="images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" width="360" height="120">
 		</a>
 	</div>
-
+	
+	<h1>What's SRL?</h1>
+	<p>Well, simply ridiculous, laugh-out-loud. Meet the three in AR (augmented reality) space, get lost in the sounds and beats, and carry the fun anywhere. Have fun!</p>
+	
 	<h1>Say something?</h1>
+	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScd9-XhhNzon2jqzU-HMmNxvrLqLucMSW6RYEEip9vZ8cR-rQ/viewform" width="100%" height="750" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+	
 	<div style="width: 640px; margin: 0 auto;">
-		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScd9-XhhNzon2jqzU-HMmNxvrLqLucMSW6RYEEip9vZ8cR-rQ/viewform?embedded=true" width="640" height="621" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScd9-XhhNzon2jqzU-HMmNxvrLqLucMSW6RYEEip9vZ8cR-rQ/viewform?embedded=true" width="100%" height="621" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 	</div>
 	
-	<h1>Never worry.</h1>
-	<p><span style="font-weight: bold;">Privacy Policy:</span> SRL does not collect, store, or access any of your personal data - ever.</p>
+	<h1>You info matters.</h1>
+	<p>Privacy policy: SRL does not collect, store, or access any of your personal data - ever.</p>
 	
-	<h1>Shot Your Fun.</h1>
-	<div class="gallery">
-		<img src="images/SRL0_1.jpeg">
-		<img src="images/SRL0_2.jpeg">
-		<img src="images/SRL0_3.jpeg">
-	</div>
-
+	<h1>...and one more thing🙂</h1>
+	<img src="images/SRL0_1.jpeg">
+	<img src="images/SRL0_2.jpeg">
+	<img src="images/SRL0_3.jpeg">
+	
 	<p style="margin: 100px 0 100px;">© Sho</p>
-	
-	<!-- simpleParallax -->
-	<script>
-		var image = document.getElementsByClassName('thumbnail');
-		new simpleParallax(image, {
-        		orientation: 'right'
-		});
-	</script>
-
 </body>
 </html>
